@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script>
+function xmlCon(){
+document.getElementById("gs").value = "<code>" + document.getElementById("gs").value.replace(/\n/g, "</code>\n<code>") + "</code>";
+}
+    </script>
+    <title>XMLconvo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+    <textarea id="gs"></textarea>
+    <br>
+    <button onclick="xmlCon()">convert</button>
+  </body>
+</html>
