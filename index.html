@@ -1,5 +1,20 @@
 <html>
   <head>
+    <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      background-color: #ff0000;
+      color: #ffffff;
+      }
+     button {
+       background-color: #000000;
+       color: #ffffff;
+     }
+     .gs {
+        width: 100%;
+      }
+    </style>
     <script>
 function xmlCon(){
 document.getElementById("gs").value = "<code>" + document.getElementById("gs").value.replace(/\n/g, "</code>\n<code>") + "</code>";
@@ -10,6 +25,7 @@ document.getElementById("gs").value = "<code>" + document.getElementById("gs").v
   </head>
   
   <body>
+    <h1>XML formatter</h1>
     <textarea id="gs"></textarea>
     <br>
     <button onclick="xmlCon()">convert</button>
